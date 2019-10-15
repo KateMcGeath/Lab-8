@@ -6,35 +6,38 @@
  * The Contestant's name (given by the exact enum name),
  * the Contestant's region, and the choice of hand they use.
  *
- * @author Stephen
- * @version 2018-03-12
+ * @author Kate McGeath
+ * @version 2018-10-15
  */
 public enum Contestant
 {
     /**
      * The Contestant "George".
      */
-    GEORGE(/* TODO: finish this */),
+    GEORGE("George"),
     
     /**
      * The Contestant "Jill".
      */
-    JILL(/* TODO: finish this */),
+    JILL("Jill"),
 
     /**
      * The Contestant "Matthew".
      */
-    MATTHEW(/* TODO: finish this */),
+    MATTHEW("Matthew"),
 
     /**
      * The Contestant "Betty".
      */
-    BETTY(/* TODO: finish this */);
+    BETTY("Betty");
 
     /**
      * ContestantInfo that holds information about this Contestant.
      */
     private ContestantInfo info;
+    
+    private Region region;
+    private HandChoice choice;
 
     /**
      * Enum constructor. Assigns the values specified for an enum type to the internal
@@ -50,7 +53,8 @@ public enum Contestant
     private Contestant(ContestantInfo info)
     {
         // TODO: implement.
-    }
+    	region = info.getRegion();
+    	choice = this.getChoice();    }
 
     /**
      * @return the Contestant's region.
@@ -58,6 +62,7 @@ public enum Contestant
     public Region getRegion()
     {
         // TODO: implement this.
+    	return region;
     }
 
     /**
@@ -66,6 +71,7 @@ public enum Contestant
     public HandChoice getChoice()
     {
         // TODO: implement this.
+    	return choice;
     }
 
     /** 
