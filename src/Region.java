@@ -40,7 +40,7 @@ public enum Region
     	//Creating a region variable.
     	Region region = Region.NORTH;
     	
-    	//Switching through all possible variables to output approapraite result.
+    	//Switching through all possible variables to output appropriate result.
     	switch (region) {
     	case NORTH: return "north";
     	case EAST: return "east";

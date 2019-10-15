@@ -5,8 +5,8 @@
  * This information includes the Contestant's region
  * and the Contestant's choice of hand to throw.
  *
- * @author Stephen
- * @version 2018-03-12
+ * @author Kate McGeath
+ * @version 2018-10-15
  */
 public class ContestantInfo
 {
@@ -28,7 +28,9 @@ public class ContestantInfo
      */
     public ContestantInfo(Region region, HandChoice choice)
     {
-    	/* TODO: finish this */
+    	//Assigning values to appropriate variables.
+    	this.region = region;
+    	this.choice = choice;
     }
 
     /**
@@ -38,7 +40,7 @@ public class ContestantInfo
      */
     public Region getRegion()
     {
-    	/* TODO: finish this */
+    	return this.region;
     }
 
     /**
@@ -48,15 +50,15 @@ public class ContestantInfo
      */
     public HandChoice getChoice()
     {
-    	/* TODO: finish this */
+    	return this.choice;
     }
 
     /**
-     * Return "contestant from <contestant name> throwing <choice>"
+     * Return "contestant from <contestant region> throwing <choice>"
      */
     @Override
     public String toString()
     {
-    	/* TODO: finish this */
+    	return "contestant from " + this.getRegion() + " throwing " + this.getChoice();
     }
 }
