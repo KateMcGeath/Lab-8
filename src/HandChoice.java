@@ -54,7 +54,7 @@ public enum HandChoice
      */
     public HandChoice winsAgainst()
     {
-    	//Initialize a HandChoice varaibale with the value of ROCK.
+    	//Initialize a HandChoice variable with the value of ROCK.
     	HandChoice choice = HandChoice.ROCK;
     	
         //Switch through the possible choices.

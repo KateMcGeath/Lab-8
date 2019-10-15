@@ -4,8 +4,8 @@
  * An enumeration containing a subset of the
  * possible regions a Contestant can be from.
  *
- * @author Stephen
- * @version 2018-03-12
+ * @author Kate McGeath
+ * @version 2018-10-15
  */
 public enum Region
 {
@@ -37,6 +37,16 @@ public enum Region
     @Override
     public String toString()
     {
-    	 // TODO: implement this.
+    	//Creating a region variable.
+    	Region region = Region.NORTH;
+    	
+    	//Switching through all possible variables to output approapraite result.
+    	switch (region) {
+    	case NORTH: return "north";
+    	case EAST: return "east";
+    	case SOUTH: return "south";
+    	case WEST: return "west";
+    	default: return "";
+    	}
     }
 }
