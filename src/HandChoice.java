@@ -6,8 +6,8 @@ import java.util.HashMap;
  * An enumeration containing the possible hand choices that a player can make
  * in Rock-Paper-Scissors.
  *
- * @author Stephen
- * @version 2018-03-12
+ * @author Kate McGeath
+ * @version 2018-10-15
  */
 public enum HandChoice
 {
@@ -38,7 +38,12 @@ public enum HandChoice
     /* This is the static initializer, run when the class is first loaded. */
     static
     {
-        // TODO: implement this. You should initialize and populate (load entries into) the CHOICE_MAP.
+        //Initialize and populate (load entries into) the CHOICE_MAP.
+    	HashMap<HandChoice, HandChoice> CHOICE_MAP = new HashMap<HandChoice, HandChoice>();
+    	
+    	CHOICE_MAP.put(ROCK, SCISSORS);
+    	CHOICE_MAP.put(PAPER, ROCK);
+    	CHOICE_MAP.put(SCISSORS, PAPER);
     }
 
     /**
