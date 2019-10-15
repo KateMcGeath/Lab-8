@@ -54,7 +54,16 @@ public enum HandChoice
      */
     public HandChoice winsAgainst()
     {
-        // TODO: implement this.
+    	//Initialize a HandChoice varaibale with the value of ROCK.
+    	HandChoice choice = HandChoice.ROCK;
+    	
+        //Switch through the possible choices.
+    	switch (choice) {
+    		case ROCK: return SCISSORS;
+    		case PAPER: return ROCK;
+    		case SCISSORS: return PAPER;
+    		default: return null;
+    	}
     }
 
     /**
